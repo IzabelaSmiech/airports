@@ -1,18 +1,18 @@
-# Lotniska Ameryki Południowej
-## Krótki opis projektu
-Projekt powstał jako zaliczenie laboratiorów podstawy programowania. Polega na analizie i wizualizacji danych dotyczących lotnisk z całego świata. Dane zostały odpowiednio wyczyszczone tak, aby zawierały jednynie lotniska dla Ameryki Południowej. Używając **geopandas**, ramka danych została zmieniona na georamkę danych w celu nadania geometrii i wizualizacji. Dodatkowo, używając **pętli for** wydzielono lotniska, które posiadały liczbę miejsc większą niż 1 milion oraz stworzono wykres przedstawiający te lotniska. Ostatnim elementem pracy było **stworzenie prostej funkcji** sprawdzającej, czy wpisane przez użytkownika lotnisko znajduje się w bazie danych. 
+# South America Airports Visualization
+## Introduction and description
+This project was created for basics of programming class. It involves the analysis and visualization of data about airports from around the world. The data has been properly cleaned to only contain informations about South America airports. Using **geopandas** , a DataFrame has been changed to a GeoDataFrame to to transform Longitude and Latitude into a list of objects and set it as geometry and for visualization purpose. Additionally, using the **for** loop, airports with more than 1 million seats were created, and a graph was created showing these airports. The last element of the work was creating a simple function **availability()** checking if the airport entered by the user is in the database.
 
-## Zamiania DF na GDF i wizualizacja lotnisk:
+## Airports Visualization:
 ![lotniska](lotniska.png)
-## Merge dwóch map - wizualizacja lotnisk na tle kontynentu:
+## Plotting the coordinates over a country-level map:
 ![lotniska2](lotniska2.png)
-## Kartogram przedstawiający ilość lotnisk:
+## Choropleth map:
 ![lotniska3](lotniska3.png)
-## Wykres słupkowy przedstawiający lotniska wykonujące najwięcej lotów:
+## Bar chart showing airports with the most seats:
 ![wykresslupkowy](wykresslupkowy.png)
 
-## Funkcja sprawdzająca oraz przykłady:
-```
+## availability() fucntion and examples of usage:
+```python
 def availability(airport):
     if airport in b_dict:
         print("Informations about airport", airport, "are available in this dataset")
