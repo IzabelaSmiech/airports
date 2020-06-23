@@ -1,6 +1,6 @@
 # South America Airports Visualization
 ## Introduction and description
-This project was created for basics of programming class. It involves the analysis and visualization of data about airports from around the world. The data has been properly cleaned to only contain informations about South America airports. Using **geopandas** , a DataFrame has been changed to a GeoDataFrame to transform Longitude and Latitude into a list of objects and set it as geometry and for visualization purpose. Additionally, using the **for** loop, airports with more than 1 million seats were created, and a graph was created showing these airports. The last element of the work was creating a simple function **availability()** checking if the airport entered by the user is in the database.
+This project was created for basics of programming class. It involves the analysis and visualization of data about airports from around the world. The data has been properly cleaned to only contain informations about South America airports. Using **geopandas** , a DataFrame has been changed to a GeoDataFrame to transform Longitude and Latitude into a list of objects and set it as geometry and for visualization purpose. Additionally, using the **for** loop, dictionary containing airports with more than 1 million seats was created, and then I decided to plot a graph showing these airports. The last element of the work was creating a simple function **availability()** checking if the airport entered by the user is in the database.
 
 ## Airports Visualization:
 ![lotniska](lotniska.png)
